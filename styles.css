@@ -57,23 +57,34 @@ textarea {
 .brand {
   display: inline-flex;
   align-items: center;
-  gap: 14px;
+  gap: 16px;
 }
 
 .brand-logo {
-  width: 78px;
+  width: 90px;
   height: auto;
   display: block;
   flex: 0 0 auto;
   border-radius: 18px;
-  background: #ffffff;
-  padding: 6px;
-  box-shadow: 0 10px 24px rgba(20, 49, 62, 0.12);
+  background: transparent;
+  padding: 0;
 }
 
 .brand strong,
 .brand small {
   display: block;
+}
+
+.brand strong {
+  font-size: clamp(1.65rem, 2.7vw, 2.25rem);
+  line-height: 1;
+  font-weight: 800;
+}
+
+.brand small {
+  font-size: clamp(1rem, 1.3vw, 1.1rem);
+  line-height: 1.2;
+  font-weight: 600;
 }
 
 .brand small,
